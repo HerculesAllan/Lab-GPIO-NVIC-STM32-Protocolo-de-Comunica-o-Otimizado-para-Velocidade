@@ -1,2 +1,4 @@
 # Lab-GPIO-NVIC-STM32-Protocolo-de-Comunica-o-Otimizado-para-Velocidade
-Protocolo de comunicação síncrono construído do zero entre dois STM32 (Mestre/Escravo). Utiliza exclusivamente portas GPIO e interrupções (NVIC/EXTI), sem depender de periféricos de hardware dedicados. Validação comprovada pela transmissão de um array de 100 inteiros de 8 bits.
+Este projeto implementa, do zero, um protocolo de comunicação digital síncrono entre dois microcontroladores STM32 (Mestre/Transmissor e Escravo/Receptor). O desenvolvimento atende ao requisito de utilizar estritamente portas de uso geral (GPIO) e o controlador de interrupções aninhadas (NVIC/EXTI), sem depender de periféricos de comunicação dedicados em hardware. O teste de validação consiste na transmissão de um array de 100 inteiros de 8 bits.
+Embora o requisito mínimo exigisse uma comunicação Half-duplex , este projeto implementou com sucesso o requisito avançado de transmissão Full-duplex, permitindo o tráfego simultâneo de dados nos dois sentidos.
+O protocolo foi projetado com foco absoluto na Velocidade (taxa de transferência mais rápida possível).
